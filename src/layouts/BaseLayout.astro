@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { LOCALES, type Locale } from '../i18n/locales';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  // Path segment after the locale prefix, e.g. "" for the homepage or
+  // "setting-up-your-first-property" for an article -- used to build the
+  // canonical URL and hreflang alternates.
+  path: string;
+  // Per-locale slug for this same logical page, when it differs from
+  // `path` (it never does today, but this keeps hreflang correct if that
+  // changes). Locales missing from this map simply don't get an alternate
+  // link -- correct behavior for an article not yet translated.
+  translationSlugs?: Partial<Record<Locale, string>>;
+  jsonLd?: Record<string, unknown>;
+}
+
+const { locale, title, description, path, translationSlugs, jsonLd } = Astro.props;
+
+const site = Astro.site!.toString().replace(/\/$/, '');
+
+// Always ends in a trailing slash, matching the actual built route
+// (Astro emits `<path>/index.html` for every page here) -- a bare path
+// segment has no slash to begin with, so it must be appended, not just
+// normalized.
+function urlFor(locale: Locale, pathSegment: string): string {
+  const trimmed = pathSegment.replace(/^\/|\/$/g, '');
+  return trimmed ? `${site}/${locale}/${trimmed}/` : `${site}/${locale}/`;
+}
+
+const canonicalUrl = urlFor(locale, path);
+
+const alternates: { locale: Locale; url: string }[] = translationSlugs
+  ? LOCALES.filter((l) => translationSlugs[l] !== undefined).map((l) => ({
+      locale: l,
+      url: urlFor(l, translationSlugs[l]!),
+    }))
+  : LOCALES.map((l) => ({ locale: l, url: urlFor(l, path) }));
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    {alternates.map(({ locale: l, url }) => (
+      <link rel="alternate" hreflang={l} href={url} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={urlFor('en', translationSlugs?.en ?? path)} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content="https://ownia.co/logo.svg" />
+    <meta name="twitter:card" content="summary" />
+
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+    )}
+  </head>
+  <body class="min-h-screen flex flex-col bg-white text-gray-900">
+    <Header locale={locale} translationSlugs={translationSlugs} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+  </body>
+</html>

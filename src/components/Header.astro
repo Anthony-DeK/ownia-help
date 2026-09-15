@@ -1,0 +1,55 @@
+---
+import { LOCALES, LOCALE_LABELS, type Locale } from '../i18n/locales';
+import { t } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+  translationSlugs?: Partial<Record<Locale, string>>;
+}
+
+const { locale, translationSlugs } = Astro.props;
+
+// Where each language option in the switcher points to: the equivalent
+// translated article if one exists, otherwise that locale's Help Center
+// homepage -- never a broken/untranslated link.
+const options = LOCALES.map((l) => ({
+  locale: l,
+  label: LOCALE_LABELS[l],
+  href: translationSlugs?.[l] !== undefined ? `/${l}/${translationSlugs[l]}/` : `/${l}/`,
+}));
+---
+
+<header class="border-b border-gray-100">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <a href={`/${locale}/`} class="flex items-center gap-2.5 flex-shrink-0">
+      <img src="/logo.svg" alt="Ownia" class="w-8 h-8" />
+      <span class="font-semibold text-gray-900">{t('Help Center', locale)}</span>
+    </a>
+
+    <div class="flex items-center gap-4">
+      <nav class="hidden sm:flex items-center gap-5 text-sm text-gray-600">
+        <a href="https://ownia.co" class="hover:text-gray-900 transition-colors">{t('Product', locale)}</a>
+        <a href="https://ownia.co/pricing" class="hover:text-gray-900 transition-colors">{t('Pricing', locale)}</a>
+      </nav>
+
+      <div class="relative">
+        <select
+          aria-label={t('Read this article in another language', locale)}
+          class="appearance-none text-sm border border-gray-200 rounded-lg pl-3 pr-7 py-1.5 bg-white text-gray-700 cursor-pointer hover:border-gray-300 transition-colors"
+          onchange="window.location.href = this.value"
+        >
+          {options.map((opt) => (
+            <option value={opt.href} selected={opt.locale === locale}>{opt.label}</option>
+          ))}
+        </select>
+      </div>
+
+      <a
+        href="https://app.ownia.co/signup"
+        class="hidden sm:inline-flex items-center bg-sky-500 hover:bg-sky-600 text-white text-sm font-medium px-4 py-1.5 rounded-lg transition-colors"
+      >
+        {t('Try Ownia free', locale)}
+      </a>
+    </div>
+  </div>
+</header>

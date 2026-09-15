@@ -1,0 +1,74 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { CATEGORY_LABELS, type Category } from '../i18n/categories';
+import { t } from '../i18n/ui';
+import type { Locale } from '../i18n/locales';
+
+interface Props {
+  locale: Locale;
+  slug: string;
+  title: string;
+  description: string;
+  category: Category;
+  updatedDate: Date;
+  translationSlugs?: Partial<Record<Locale, string>>;
+}
+
+const { locale, slug, title, description, category, updatedDate, translationSlugs } = Astro.props;
+
+const site = Astro.site!.toString().replace(/\/$/, '');
+const pageUrl = `${site}/${locale}/${slug}/`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: title,
+      description,
+      url: pageUrl,
+      inLanguage: locale,
+      dateModified: updatedDate.toISOString(),
+      publisher: { '@type': 'Organization', name: 'Ownia', url: 'https://ownia.co', logo: 'https://ownia.co/logo.svg' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: t('Help Center', locale), item: `${site}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: title, item: pageUrl },
+      ],
+    },
+  ],
+};
+
+const dateFormatted = updatedDate.toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout locale={locale} title={`${title} | Ownia Help Center`} description={description} path={slug} translationSlugs={translationSlugs} jsonLd={jsonLd}>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+    <a href={`/${locale}/`} class="text-sm text-sky-600 hover:text-sky-700 font-medium mb-6 inline-block">
+      ← {t('Back to Help Center', locale)}
+    </a>
+
+    <p class="text-xs font-semibold uppercase tracking-wide text-sky-600 mb-2">{CATEGORY_LABELS[category][locale]}</p>
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">{title}</h1>
+    <p class="text-sm text-gray-400 mb-10">{t('Last updated', locale)} {dateFormatted}</p>
+
+    <article class="prose prose-sky max-w-none prose-headings:font-semibold prose-a:text-sky-600 prose-a:no-underline hover:prose-a:underline">
+      <slot />
+    </article>
+
+    <div class="mt-16 pt-8 border-t border-gray-100 rounded-2xl bg-sky-50 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-0">
+      <div>
+        <p class="font-semibold text-gray-900">{t('Try Ownia free', locale)}</p>
+        <p class="text-sm text-gray-500 mt-0.5">1 property, no monthly fee, 5% commission per booking.</p>
+      </div>
+      <a
+        href="https://app.ownia.co/signup"
+        class="flex-shrink-0 inline-flex items-center justify-center bg-sky-500 hover:bg-sky-600 text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors"
+      >
+        {t('Start for free', locale)} →
+      </a>
+    </div>
+  </div>
+</BaseLayout>
