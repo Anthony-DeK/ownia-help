@@ -19,7 +19,7 @@ Si acabas de crear tu cuenta de Ownia, se te guiará automáticamente a través 
 Para añadir una propiedad en cualquier momento, abre la página **Propiedades** desde la barra lateral y haz clic en **Añadir propiedad**. Se te pedirá que elijas uno de estos dos puntos de partida:
 
 - **Crear desde cero** — Crea tu anuncio a partir de un formulario en blanco.
-- **Importar desde la URL del anuncio** — Pega un enlace a un anuncio existente de Airbnb o Booking.com y Ownia recuperará automáticamente las fotos, la descripción y los servicios.
+- **Importar desde la URL del anuncio** — Pega un enlace a un anuncio existente de Airbnb y Ownia recuperará automáticamente las fotos, la descripción y los servicios.
 
 Si realizas la importación desde una URL, revisa atentamente la pantalla **Resultados de la importación**. Los campos que Ownia no ha podido detectar aparecen marcados para que puedas completarlos tú mismo antes de continuar.
 

@@ -19,7 +19,7 @@ If you just created your Ownia account, you're automatically guided through a 5-
 To add a property at any time, open the **Properties** page from the sidebar and click **Add Property**. You'll be asked to choose one of two starting points:
 
 - **Create from scratch** — build your listing from a blank form.
-- **Import from listing URL** — paste a link to an existing Airbnb or Booking.com listing and Ownia will pull in the photos, description, and amenities automatically.
+- **Import from listing URL** — paste a link to an existing Airbnb listing and Ownia will pull in the photos, description, and amenities automatically.
 
 If you import from a URL, review the **Import Results** screen carefully. Fields Ownia couldn't detect are flagged so you can fill them in yourself before continuing.
 

@@ -19,7 +19,7 @@ Wenn Sie gerade Ihr Ownia-Konto erstellt haben, werden Sie automatisch durch ein
 Um jederzeit eine Unterkunft hinzuzufügen, öffnen Sie die Seite **Unterkünfte** in der Seitenleiste und klicken Sie auf **Unterkunft hinzufügen**. Sie werden aufgefordert, einen von zwei Ausgangspunkten auszuwählen:
 
 - **Von Grund auf neu erstellen** – Erstellen Sie Ihren Eintrag anhand eines leeren Formulars.
-- **Aus der Angebots-URL importieren** – Fügen Sie einen Link zu einem bestehenden Eintrag auf Airbnb oder Booking.com ein, und Ownia ruft automatisch die Fotos, die Beschreibung und die Ausstattungsmerkmale ab.
+- **Aus der Angebots-URL importieren** – Fügen Sie einen Link zu einem bestehenden Eintrag auf Airbnb ein, und Ownia ruft automatisch die Fotos, die Beschreibung und die Ausstattungsmerkmale ab.
 
 Wenn Sie Daten über eine URL importieren, überprüfen Sie den Bildschirm **Ergebnisse importieren** sorgfältig. Felder, die Ownia nicht erkennen konnte, sind gekennzeichnet, sodass Sie diese selbst ausfüllen können, bevor Sie fortfahren.
 
