@@ -106,6 +106,10 @@ const TERM_OVERRIDES: Record<string, Partial<Record<string, string>>> = {
   'Online Booking Settings': { fr: 'Paramètres de réservation en ligne', de: 'Einstellungen für die Online-Buchung', es: 'Configuración de reservas en línea', it: 'Impostazioni per la prenotazione online', pt: 'Definições de reservas online' },
   'Custom domain': { fr: 'Domaine personnalisé', de: 'Benutzerdefinierte Domain', es: 'Dominio personalizado', it: 'Dominio personalizzato', pt: 'Domínio personalizado' },
   'Store Settings': { fr: 'Paramètres de la boutique', de: 'Shop-Einstellungen', es: 'Configuración de la tienda', it: 'Impostazioni del negozio', pt: 'Definições da loja' },
+  // Web Store → Promote tab and its Search Console card (ownia-app WebStore.tsx),
+  // referenced by indexing-your-booking-site-on-google.md.
+  'Promote': { fr: 'Promouvoir', de: 'Fördern', es: 'Promover', it: 'Promuovere', pt: 'Promover' },
+  'Get your booking site indexed by Google': { fr: 'Faites référencer votre site de réservation par Google', de: 'Lassen Sie Ihre Buchungsseite von Google indexieren', es: 'Haz que Google indexe tu página web de reservas', it: 'Fai in modo che il tuo sito di prenotazioni venga indicizzato da Google', pt: 'Faça com que o seu site de reservas seja indexado pelo Google' },
   Configure: { fr: 'Configurer', de: 'Konfigurieren', es: 'Configurar', it: 'Configura', pt: 'Configurar' },
   'Check now': { fr: 'Vérifiez dès maintenant', de: 'Jetzt prüfen', es: 'Compruébalo ahora', it: 'Controlla subito', pt: 'Verifique agora' },
   'New Property': { fr: 'Nouveau bien immobilier', de: 'Neue Immobilie', es: 'Inmueble nuevo', it: 'Nuovo immobile', pt: 'Novo imóvel' },
