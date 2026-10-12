@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "pt"
 ---
 
-A Ownia não retém o seu dinheiro. Todas as reservas são processadas pela Stripe e os fundos são transferidos diretamente para a sua conta bancária — a Ownia retém automaticamente a sua comissão fixa de 5% no momento do pagamento, sem que seja necessário pagar qualquer fatura separada.
+A Ownia não retém o seu dinheiro. Todas as reservas são processadas pela Stripe e os fundos são transferidos diretamente para a sua conta bancária — a Ownia retém automaticamente a sua comissão de 3,7% no momento do pagamento, custos de pagamento incluídos (a Ownia fica com cerca de 1,9% e o resto cobre as taxas da Stripe), sem que seja necessário pagar qualquer fatura separada.
 
 Para aceitar uma reserva direta paga, primeiro tem de associar uma conta Stripe à sua Loja Online.
 

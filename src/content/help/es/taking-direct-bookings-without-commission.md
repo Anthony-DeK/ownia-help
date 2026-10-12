@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "es"
 ---
 
-Airbnb y Booking.com suelen cobrar a los anfitriones entre un 3 % y un 18 % por reserva, dependiendo de la plataforma y del tipo de anuncio, además de lo que cobran a los huéspedes en concepto de comisiones de servicio. Ownia cobra una comisión fija del **5 % por reserva, en todos los planes, sin gastos de publicación**; y, a diferencia de un mercado online, tú también mantienes la relación con el huésped: su correo electrónico, su historial de reservas y la posibilidad de que vuelva a alojarse sin tener que pagar una segunda vez a un mercado online.
+Airbnb y Booking.com suelen cobrar a los anfitriones entre un 3 % y un 18 % por reserva, dependiendo de la plataforma y del tipo de anuncio, además de lo que cobran a los huéspedes en concepto de comisiones de servicio. Ownia cobra una única comisión del **3,7 % por reserva, procesamiento de pagos incluido, en todos los planes, sin gastos de publicación** (Ownia conserva alrededor de un 1,9 %; el resto cubre las comisiones de tarjeta de Stripe); y, a diferencia de un mercado online, tú también mantienes la relación con el huésped: su correo electrónico, su historial de reservas y la posibilidad de que vuelva a alojarse sin tener que pagar una segunda vez a un mercado online.
 
 Nada de esto significa que debas eliminar tus anuncios de Airbnb o Booking.com; esas plataformas siguen siendo valiosas para que los huéspedes te encuentren. El objetivo es ofrecer a los huéspedes que ya te conocen (antiguos huéspedes, personas que te han recomendado, tu propia audiencia) una razón de peso para reservar directamente, en lugar de recurrir por costumbre a una plataforma de reservas.
 

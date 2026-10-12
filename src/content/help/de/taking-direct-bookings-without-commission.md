@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "de"
 ---
 
-Airbnb und Booking.com berechnen Gastgebern in der Regel zwischen 3 % und 18 % pro Buchung, je nach Plattform und Art des Inserats, zusätzlich zu den Servicegebühren, die sie den Gästen in Rechnung stellen. Ownia berechnet eine pauschale **Provision von 5 % pro Buchung bei jedem Tarif, ohne Inseratsgebühren** – und im Gegensatz zu einem Marktplatz behalten Sie zudem die Beziehung zum Gast: dessen E-Mail-Adresse, den Buchungsverlauf und die Möglichkeit, ihn zu einem erneuten Aufenthalt zu bewegen, ohne ein zweites Mal an einen Marktplatz zahlen zu müssen.
+Airbnb und Booking.com berechnen Gastgebern in der Regel zwischen 3 % und 18 % pro Buchung, je nach Plattform und Art des Inserats, zusätzlich zu den Servicegebühren, die sie den Gästen in Rechnung stellen. Ownia berechnet eine einzige **Provision von 3,7 % pro Buchung, Zahlungsabwicklung inklusive, bei jedem Tarif, ohne Inseratsgebühren** (Ownia behält etwa 1,9 %, der Rest deckt die Kartengebühren von Stripe) – und im Gegensatz zu einem Marktplatz behalten Sie zudem die Beziehung zum Gast: dessen E-Mail-Adresse, den Buchungsverlauf und die Möglichkeit, ihn zu einem erneuten Aufenthalt zu bewegen, ohne ein zweites Mal an einen Marktplatz zahlen zu müssen.
 
 Das bedeutet jedoch nicht, dass Sie Ihre Angebote auf Airbnb oder Booking.com löschen sollten – diese Plattformen sind nach wie vor wichtig, um von Ihnen gefunden zu werden. Das Ziel ist es, Gästen, die Sie bereits kennen (ehemalige Gäste, Weiterempfehlungen, Ihre eigene Zielgruppe), einen besseren Grund zu geben, direkt bei Ihnen zu buchen, anstatt aus Gewohnheit auf eine Vermittlungsplattform zurückzugreifen.
 

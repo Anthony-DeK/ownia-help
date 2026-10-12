@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "fr"
 ---
 
-Airbnb et Booking.com prélèvent généralement aux hôtes une commission comprise entre 3 % et 18 % par réservation, selon la plateforme et le type d’annonce, en plus des frais de service facturés aux voyageurs. Ownia prélève une commission forfaitaire de **5 % par réservation, quel que soit le forfait choisi, sans frais d'annonce** — et contrairement à une place de marché, vous conservez également la relation avec le voyageur : son e-mail, son historique de réservations et la possibilité de le faire revenir pour un nouveau séjour sans avoir à payer une deuxième fois une place de marché.
+Airbnb et Booking.com prélèvent généralement aux hôtes une commission comprise entre 3 % et 18 % par réservation, selon la plateforme et le type d’annonce, en plus des frais de service facturés aux voyageurs. Ownia prélève une commission unique de **3,7 % par réservation, frais de paiement inclus, quel que soit le forfait choisi, sans frais d'annonce** (Ownia en conserve environ 1,9 % ; le reste couvre les frais de carte de Stripe) — et contrairement à une place de marché, vous conservez également la relation avec le voyageur : son e-mail, son historique de réservations et la possibilité de le faire revenir pour un nouveau séjour sans avoir à payer une deuxième fois une place de marché.
 
 Cela ne signifie pas pour autant que vous deviez supprimer vos annonces sur Airbnb ou Booking.com : ces plateformes restent un moyen précieux de vous faire connaître. L’objectif est de donner aux voyageurs qui vous connaissent déjà (anciens clients, personnes recommandées, votre propre audience) une meilleure raison de réserver directement chez vous, plutôt que de se tourner par habitude vers une plateforme de réservation.
 

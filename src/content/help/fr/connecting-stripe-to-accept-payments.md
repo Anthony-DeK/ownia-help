@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "fr"
 ---
 
-Ownia ne conserve pas votre argent. Chaque réservation est traitée par Stripe, et les fonds sont versés directement sur votre propre compte bancaire — Ownia prélève automatiquement sa commission forfaitaire de 5 % au moment du paiement, sans facture distincte à régler.
+Ownia ne conserve pas votre argent. Chaque réservation est traitée par Stripe, et les fonds sont versés directement sur votre propre compte bancaire — Ownia prélève automatiquement sa commission de 3,7 % au moment du paiement, frais de paiement inclus (Ownia en conserve environ 1,9 % et le reste couvre les frais de Stripe), sans facture distincte à régler.
 
 Pour accepter une réservation directe payante, vous devez d'abord associer un compte Stripe à votre boutique en ligne.
 

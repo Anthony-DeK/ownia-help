@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "en"
 ---
 
-Ownia doesn't hold your money. Every booking is processed by Stripe, and funds go directly to your own bank account — Ownia takes its flat 5% commission automatically at the time of payment, with no separate invoice to pay.
+Ownia doesn't hold your money. Every booking is processed by Stripe, and funds go directly to your own bank account — Ownia takes its 3.7% commission automatically at the time of payment, card processing included (Ownia keeps about 1.9% and the rest covers Stripe's fees), with no separate invoice to pay.
 
 To accept a paid direct booking, you first need to connect a Stripe account to your Web Store.
 

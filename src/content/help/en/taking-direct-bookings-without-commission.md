@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "en"
 ---
 
-Airbnb and Booking.com typically charge hosts somewhere between 3% and 18% per booking depending on the platform and listing type, on top of what they charge guests in service fees. Ownia charges a flat **5% commission per booking, on every plan, with no listing fees** — and unlike a marketplace, you also keep the guest relationship: their email, their booking history, and the ability to bring them back for a repeat stay without paying a marketplace a second time.
+Airbnb and Booking.com typically charge hosts somewhere between 3% and 18% per booking depending on the platform and listing type, on top of what they charge guests in service fees. Ownia charges a single **3.7% commission per booking, card processing included, on every plan, with no listing fees** (Ownia keeps about 1.9%; the rest covers Stripe's card fees) — and unlike a marketplace, you also keep the guest relationship: their email, their booking history, and the ability to bring them back for a repeat stay without paying a marketplace a second time.
 
 None of this means you should delete your Airbnb or Booking.com listings — those platforms are still valuable for discovery. The goal is to give guests who already know about you (past guests, referrals, your own audience) a better reason to book directly instead of defaulting to a marketplace out of habit.
 

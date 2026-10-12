@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "de"
 ---
 
-Ownia verwahrt Ihr Geld nicht. Jede Buchung wird über Stripe abgewickelt, und der Betrag wird direkt auf Ihr eigenes Bankkonto überwiesen – Ownia zieht seine pauschale Provision in Höhe von 5 % automatisch zum Zeitpunkt der Zahlung ab, ohne dass eine separate Rechnung zu begleichen ist.
+Ownia verwahrt Ihr Geld nicht. Jede Buchung wird über Stripe abgewickelt, und der Betrag wird direkt auf Ihr eigenes Bankkonto überwiesen – Ownia zieht seine Provision in Höhe von 3,7 % automatisch zum Zeitpunkt der Zahlung ab, Zahlungsabwicklung inklusive (Ownia behält etwa 1,9 %, der Rest deckt die Gebühren von Stripe), ohne dass eine separate Rechnung zu begleichen ist.
 
 Um eine bezahlte Direktbuchung anzunehmen, müssen Sie zunächst ein Stripe-Konto mit Ihrem Webshop verknüpfen.
 

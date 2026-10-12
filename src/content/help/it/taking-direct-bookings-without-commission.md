@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "it"
 ---
 
-Airbnb e Booking.com addebitano solitamente ai padroni di casa una commissione compresa tra il 3% e il 18% per prenotazione, a seconda della piattaforma e del tipo di annuncio, oltre alle commissioni di servizio addebitate agli ospiti. Ownia applica una commissione fissa del **5% per prenotazione, su tutti i piani, senza costi di inserzione** — e, a differenza di un marketplace, ti permette anche di mantenere il rapporto con l’ospite: la sua e-mail, la cronologia delle prenotazioni e la possibilità di invitarlo a tornare per un nuovo soggiorno senza dover pagare una seconda volta il marketplace.
+Airbnb e Booking.com addebitano solitamente ai padroni di casa una commissione compresa tra il 3% e il 18% per prenotazione, a seconda della piattaforma e del tipo di annuncio, oltre alle commissioni di servizio addebitate agli ospiti. Ownia applica un'unica commissione del **3,7% per prenotazione, costi di pagamento inclusi, su tutti i piani, senza costi di inserzione** (Ownia trattiene circa l'1,9%; il resto copre le commissioni sulle carte di Stripe) — e, a differenza di un marketplace, ti permette anche di mantenere il rapporto con l’ospite: la sua e-mail, la cronologia delle prenotazioni e la possibilità di invitarlo a tornare per un nuovo soggiorno senza dover pagare una seconda volta il marketplace.
 
 Nulla di tutto ciò significa che dovresti eliminare i tuoi annunci su Airbnb o Booking.com: quelle piattaforme sono ancora preziose per farti conoscere. L'obiettivo è offrire agli ospiti che già ti conoscono (ospiti precedenti, persone che ti hanno raccomandato, il tuo pubblico) un motivo in più per prenotare direttamente, invece di ricorrere per abitudine a una piattaforma di prenotazione.
 

@@ -8,7 +8,7 @@ updatedDate: 2026-09-15
 locale: "it"
 ---
 
-Ownia non trattiene il tuo denaro. Ogni prenotazione viene gestita da Stripe e i fondi vengono versati direttamente sul tuo conto corrente; Ownia preleva automaticamente la propria commissione fissa del 5% al momento del pagamento, senza che sia necessario pagare alcuna fattura separata.
+Ownia non trattiene il tuo denaro. Ogni prenotazione viene gestita da Stripe e i fondi vengono versati direttamente sul tuo conto corrente; Ownia preleva automaticamente la propria commissione del 3,7% al momento del pagamento, costi di pagamento inclusi (Ownia trattiene circa l'1,9% e il resto copre le commissioni di Stripe), senza che sia necessario pagare alcuna fattura separata.
 
 Per accettare una prenotazione diretta a pagamento, devi prima collegare un account Stripe al tuo negozio online.
 
